@@ -16,6 +16,8 @@ def getCategory(category):
     return urllib.request.urlopen("https://www.nytimes.com/section/"+ category).read()
 
 def parseDate(html, date):
+    # TODO: parse the HTML file and filter the headlines by date (use the date substring that is included in each article url)
+    # parse the html and return an array of headlines that match the date given
     soup = BeautifulSoup(html, 'html.parser')
     
 def main(args):
